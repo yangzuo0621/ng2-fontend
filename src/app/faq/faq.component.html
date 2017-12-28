@@ -1,0 +1,69 @@
+<div class="ui center aligned blue inverted very padded basic segment">
+  <h1>FAQ</h1>
+</div>
+
+<div class="ui fluid container">
+  <p class="description">Here you find an overview of frequently asked questions on a number of topics regarding the CubeSat Shop. If you have a
+    question, which is not answered in the FAQ, please feel free to contact us at info@cubesatshop.com.</p>
+</div>
+
+
+<div class="ui container">
+  <div class="ui basic segment">
+    <h2>General questions</h2>
+    <div class="ui segments">
+      <div class="ui blue segment">
+        <a (click)="show($event)">
+          <p>Are there any products on CubeSatShop for which certain export restrictions apply?</p>
+        </a>
+      </div>
+      <div class="ui segment annotation transition visible">
+        <p>Depending on the end-use of certain products, an export restriction might apply.</p>
+      </div>
+    </div>
+
+    <div class="ui segments">
+      <div class="ui blue segment">
+        <a (click)="show($event)">
+          <p>What’s the PC/104 Specification?</p>
+        </a>
+      </div>
+      <div class="ui segment annotation transition visible">
+        <p>PC/104 Specification is an electrical and mechanical standard for PCB mostly used by the CubeSat community. For more
+          information please refer to this document:
+          <br>PC/104 Specifications Version 2.5</p>
+      </div>
+    </div>
+
+    <div class="ui segments">
+      <div class="ui blue segment">
+        <a (click)="show($event)">
+          <p>Is there some differences between the PC/104 standard specifications (see above) and the PC/104 CubeSat specifications?
+            Are the products on CubeSatShop fully PC/104 ‘Compliant’?</p>
+        </a>
+      </div>
+      <div class="ui segment annotation transition visible">
+        <p>PC/104 “Compliant” refers to “PC/104 form factor” devices that conform to all non-optional aspects of the PC/104
+          specification, including both mechanical and electrical specifications.
+          <br> Most of the products on CubeSatShop are PC/104 “Bus Compatible”: some specifications may differ slightly from
+          the PC/104 standard specification (such as position of the connector etc.), but a male or female PC/104 bus connector
+          that meets both the mechanical and electrical specifications related to bus connector is provided. Moreover, there
+          is no real “standard” in terms of the allocation of the pins used. Some differences may occur between different
+          manufacturers and CubeSat products.</p>
+      </div>
+    </div>
+
+    <div class="ui segments">
+      <div class="ui blue segment">
+        <a (click)="show($event)">
+          <p>Are all products on CubeSatShop compatible with each other?</p>
+        </a>
+      </div>
+      <div class="ui segment annotation transition visible">
+        <p>Generally the products are compatible with each other. However, some interface issues might be encountered between
+          products from different vendors. Should you have any question on system’s compatibility do not hesitate to contact
+          us.</p>
+      </div>
+    </div>
+  </div>
+</div>

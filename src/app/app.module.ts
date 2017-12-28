@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { HowItWorkComponent } from './how-it-work/how-it-work.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './routes';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -13,10 +17,13 @@ import { MainContentComponent } from './main-content/main-content.component';
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    HowItWorkComponent,
+    FaqComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
