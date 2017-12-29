@@ -1,10 +1,10 @@
 <div class="ui center aligned blue inverted very padded basic segment">
-  <h1>Antenna systems</h1>
+  <h1>{{category.title}}</h1>
 </div>
 
 <div class="ui basic segment container">
   <div class="ui three stackable cards">
-    <div class="card" *ngFor="let item of categories">
+    <div class="card" *ngFor="let item of category.data">
       <div class="image">
         <img src="assets/images/{{item.img}}">
       </div>

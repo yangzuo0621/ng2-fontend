@@ -11,7 +11,7 @@ export const appRoutes: Routes = [
     { path: 'how-it-works', component: HowItWorkComponent },
     { path: 'faq', component: FaqComponent },
     { path: 'products', component: ProductsListComponent },
-    { path: 'products/category', component: ProductCategoryListComponent },
+    { path: 'products/category/:type', component: ProductCategoryListComponent },
     { path: 'products/details', component: ProductDetailsComponent }
     // { path: 'products', loadChildren: 'app/products/products.module#ProductsModule' }
 ];
