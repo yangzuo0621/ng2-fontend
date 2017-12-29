@@ -3,7 +3,7 @@
     <img class="ui small image" src="images/logo_css.png">
   </a> -->
   <div class="ui simple dropdown right item">
-    PRODUCTS
+    <a [routerLink]="['/products']">PRODUCTS</a>
     <i class="dropdown icon"></i>
     <div class="menu">
       <a class="item">Antenna systems</a>
@@ -54,7 +54,7 @@
       <a class="item">TV-SPACE</a>
     </div>
   </div>
-  <a class="item" [routerLink]="['/how-it-works']">HOW IT WORKS</a>
-  <a class="item" [routerLink]="['/faq']">FAQ</a>
+  <a class="item test" routerLinkActive="active" [routerLink]="['/how-it-works']">HOW IT WORKS</a>
+  <a class="item" routerLinkActive="active" [routerLink]="['/faq']">FAQ</a>
   <a class="item">INQUIRY LIST(0)</a>
 </div>

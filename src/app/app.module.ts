@@ -10,6 +10,9 @@ import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { FaqComponent } from './faq/faq.component';
+import { ProductsListComponent } from './products/products-list/products-list.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { ProductCategoryListComponent } from './products/product-category-list/product-category-list.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { FaqComponent } from './faq/faq.component';
     FooterComponent,
     MainContentComponent,
     HowItWorkComponent,
-    FaqComponent
+    FaqComponent,
+    ProductsListComponent,
+    ProductDetailsComponent,
+    ProductCategoryListComponent
   ],
   imports: [
     BrowserModule,

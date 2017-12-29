@@ -1,0 +1,32 @@
+<div class="ui center aligned blue inverted very padded basic segment">
+  <h1>Products</h1>
+</div>
+
+<div class="ui fluid container">
+  <p class="description">Welcome to the CubeSatShop, the one stop webshop that offers a broad range of products for CubeSats and nanosatellites
+    in general. The webshop offers standardized, off-the-shelf components and subsystems from a variety of manufacturers.</p>
+</div>
+
+<div class="ui basic segment container">
+  <div class="ui three column grid">
+    <div class="row" *ngFor="let product of products">
+      <div class="column" *ngFor="let item of product">
+        <a class="ui image" href="">
+          <img src="assets/images/{{item.img}}">
+          {{item.type}} ({{item.num}})
+        </a>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="column">
+        <img src="assets/images/14.png">
+      </div>
+      <div class="column">
+        <img src="assets/images/15.png">
+      </div>
+      <div class="column">
+        <img src="assets/images/16.png">
+      </div>
+    </div> -->
+  </div>
+</div>
