@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
-  selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-products-list',
   templateUrl: './products-list.component.html',
   styles: [`
     .ui.segment { margin-top: 15px; }

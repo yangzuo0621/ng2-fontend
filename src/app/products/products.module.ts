@@ -1,21 +1,22 @@
-// import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-// import { RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-// import { ProductCategoryListComponent } from './product-category-list/product-category-list.component';
+import { ProductsRoutingModule } from './products-routing.module';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductCategoryListComponent } from './product-category-list/product-category-list.component';
+import { ProductsComponent } from './products.component';
 
-// import { productsRoutes } from './products.routes';
-// import { ProductDetailsComponent } from './product-details/product-details.component';
-
-// @NgModule({
-//   imports: [
-//     CommonModule,
-//     RouterModule.forChild(productsRoutes)
-//   ],
-//   declarations: [
-//     ProductCategoryListComponent,
-//     ProductDetailsComponent,
-//     ProductCategoryListComponent
-//   ]
-// })
-// export class ProductsModule { }
+@NgModule({
+  imports: [
+    CommonModule,
+    ProductsRoutingModule
+  ],
+  declarations: [
+    ProductsListComponent,
+    ProductDetailsComponent,
+    ProductCategoryListComponent,
+    ProductsComponent
+  ]
+})
+export class ProductsModule { }
